@@ -4,6 +4,7 @@ def solution(k, m, score):
     
     total = 0
     for i in range(len(score)//m):
-        next = score[(i+1) * m -1]
-        total += next * m
+        #최저의 값으로 박스 수 구해야해
+        mini = score[(i+1) * m -1]
+        total += mini * m
     return total
